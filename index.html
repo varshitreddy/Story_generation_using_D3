@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternative Schools in India</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Alternative Schools in India</h1>
+    </header>
+
+    <div id="content">
+        <div id="map"></div>
+        <div id="info"></div>
+    </div>
+
+    <!-- Slider container for year selection -->
+    <div class="slider-container">
+        <label for="year-slider">Select Year of Founding:</label>
+        <input type="range" id="year-slider" min="1950" max="2024" step="1" value="2024">
+        <span id="year-display">2024</span>
+    </div>
+
+    <!-- New section for alternative education info -->
+    <section id="education-info">
+        <h2>The Growth of Alternative Education in India</h2>
+        <p>
+            Alternative education in India is becoming increasingly popular as parents and educators look for more personalized and holistic approaches to learning. Unlike traditional schools, which emphasize exams and standardized curricula, alternative schools offer flexible learning models that prioritize creativity, critical thinking, and emotional well-being.
+        </p>
+        <h3>Why Alternative Education?</h3>
+        <ul>
+            <li><strong>Holistic Development:</strong> These schools integrate arts, physical activities, and emotional learning, nurturing a child’s mind, body, and creativity.</li>
+            <li><strong>Personalized Learning:</strong> Alternative schools cater to diverse learning styles, allowing children to learn at their own pace.</li>
+            <li><strong>Rethinking Rote Learning:</strong> Many parents are discontented with rote memorization and are seeking approaches that foster problem-solving and curiosity.</li>
+        </ul>
+        <h3>Popular Models in India</h3>
+        <ul>
+            <li><strong>Montessori:</strong> Hands-on, self-directed learning focusing on independence.</li>
+            <li><strong>Waldorf:</strong> Emphasizes creativity and imagination, avoiding textbooks in the early years.</li>
+            <li><strong>Krishnamurti Schools:</strong> Encourages critical thinking and self-awareness.</li>
+            <li><strong>Experiential Learning:</strong> Focuses on real-world experiences and projects.</li>
+        </ul>
+        <h3>Challenges</h3>
+        <ul>
+            <li><strong>Affordability:</strong> Many alternative schools have high fees, limiting access.</li>
+            <li><strong>Awareness:</strong> Parents are often unaware of alternative schooling options.</li>
+            <li><strong>Cultural Resistance:</strong> There’s a strong attachment to traditional exam-focused education.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Data Source: D3 & Custom Data</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
