@@ -1,0 +1,201 @@
+name,state,year,latitude,longitude,type
+Comini Microschool,Maharashtra,2021.0,18.5204,73.8567,Experiential Learning
+Sweven Montessori,Maharashtra,2018.0,18.5204,73.8567,Montessori
+Shishyaa,Maharashtra,2015.0,18.5204,73.8567,Experiential Learning
+Tridha,Maharashtra,2000.0,18.5204,73.8567,Waldorf
+Greenwood Academy,Uttar Pradesh,2005.0,26.8467,80.9462,Experiential Learning
+Sunrise Montessori School,Uttar Pradesh,2018.0,26.8467,80.9462,Montessori
+Pathway Waldorf School,Tamil Nadu,1998.0,13.0827,80.2707,Waldorf
+Vision Krishnamurti Center,Kerala,2007.0,8.5241,76.9366,Krishnamurti Schools
+Learning Tree Academy,Gujarat,1999.0,22.2587,71.1924,Experiential Learning
+Horizon Experiential School,West Bengal,2015.0,22.9868,87.855,Experiential Learning
+Bright Future Montessori,Delhi,2002.0,28.7041,77.1025,Montessori
+School Primary,Delhi,,34.1982,80.9489,Krishnamurti Schools
+Pathway Primary,Telangana,,20.8582,79.9649,Krishnamurti Schools
+Pathway Creative,Kerala,,18.5791,94.795,Waldorf
+Institute Progressive,Maharashtra,1999.0,22.1159,78.7443,Waldorf
+Pathway Primary,West Bengal,,13.988,83.1671,Waldorf
+School Primary,Rajasthan,,10.615,70.7897,Experiential Learning
+Academy International,Haryana,1996.0,27.5035,94.9974,Experiential Learning
+Foundation Progressive,Kerala,2011.0,30.5105,91.3917,Experiential Learning
+Pathway Learning,Madhya Pradesh,1989.0,31.1103,76.6912,Krishnamurti Schools
+Vision Primary,West Bengal,1978.0,23.8701,80.4435,Experiential Learning
+Institute Creative,Uttar Pradesh,1990.0,14.8711,79.7321,Krishnamurti Schools
+Foundation International,West Bengal,,28.1708,87.3859,Krishnamurti Schools
+Centre Innovative,Andhra Pradesh,2010.0,25.6614,70.8896,Montessori
+Vision Innovative,Gujarat,2000.0,34.3902,90.0388,Waldorf
+Vision Creative,Rajasthan,,13.2088,87.3525,Waldorf
+Institute Creative,Kerala,2002.0,29.7317,94.5305,Krishnamurti Schools
+Pathway International,Kerala,,24.1694,80.7448,Waldorf
+Foundation Primary,Uttar Pradesh,1994.0,14.3657,79.611,Montessori
+Academy Primary,Delhi,2022.0,8.7027,69.1122,Waldorf
+Pathway Learning,Karnataka,,22.7115,77.5922,Waldorf
+Academy Creative,Maharashtra,1975.0,18.7338,89.679,Experiential Learning
+Pathway Progressive,Rajasthan,1997.0,15.2768,70.8645,Krishnamurti Schools
+Campus International,Telangana,1973.0,18.5385,85.2819,Experiential Learning
+Centre Progressive,Uttar Pradesh,1986.0,22.5253,82.2526,Krishnamurti Schools
+Foundation Innovative,Punjab,,14.7456,94.2603,Waldorf
+Vision Creative,Odisha,,23.9394,95.9563,Experiential Learning
+Institute Innovative,Maharashtra,2002.0,31.0627,87.0679,Krishnamurti Schools
+Institute Creative,Punjab,,24.0615,95.5904,Experiential Learning
+Pathway Progressive,Rajasthan,2004.0,12.0566,76.8474,Montessori
+Foundation Creative,Punjab,,31.1442,92.7293,Experiential Learning
+Institute Progressive,Kerala,,34.9145,75.1326,Krishnamurti Schools
+Pathway Learning,Kerala,,24.166,71.8541,Waldorf
+Institute Progressive,Madhya Pradesh,2010.0,28.8666,84.7138,Montessori
+Institute International,Delhi,,34.7611,80.2361,Experiential Learning
+School Creative,Uttar Pradesh,,28.4639,85.218,Montessori
+Campus Creative,Delhi,,22.0983,85.0289,Waldorf
+Centre Innovative,Gujarat,2011.0,21.4472,68.5926,Experiential Learning
+Centre Primary,Gujarat,,31.192,72.3902,Waldorf
+Centre Primary,Rajasthan,,21.1879,85.2764,Montessori
+Academy Progressive,Odisha,2013.0,18.0435,68.9193,Experiential Learning
+Academy Primary,Uttar Pradesh,,11.7772,90.8726,Krishnamurti Schools
+Pathway Learning,Haryana,,12.3496,80.6021,Montessori
+School Learning,Madhya Pradesh,2010.0,30.4169,95.7203,Waldorf
+School Learning,Delhi,1997.0,25.2548,80.3759,Montessori
+Institute Innovative,Karnataka,,15.5256,76.544,Waldorf
+Pathway International,Rajasthan,1993.0,12.4452,78.8016,Krishnamurti Schools
+Vision International,Andhra Pradesh,1991.0,31.0113,75.5175,Montessori
+Institute Learning,Odisha,,30.9453,76.8663,Montessori
+Institute Progressive,Gujarat,,13.6121,69.2321,Krishnamurti Schools
+Institute Learning,Odisha,,18.6838,96.2057,Experiential Learning
+Academy Learning,Tamil Nadu,,12.8117,73.8952,Montessori
+Academy International,Odisha,,34.6898,72.395,Experiential Learning
+Centre Creative,Madhya Pradesh,2020.0,30.9593,76.4397,Krishnamurti Schools
+Vision Learning,Gujarat,,13.0307,73.4483,Montessori
+Academy Innovative,Haryana,,27.59,91.8227,Krishnamurti Schools
+School Primary,Rajasthan,,26.7714,88.4515,Experiential Learning
+School Learning,Haryana,2002.0,13.3555,90.3112,Montessori
+School Learning,Karnataka,1995.0,27.579,84.0746,Krishnamurti Schools
+Pathway Innovative,Madhya Pradesh,,26.198,95.381,Experiential Learning
+Centre Progressive,Tamil Nadu,,14.758,86.0943,Krishnamurti Schools
+Institute Primary,Haryana,,19.4394,82.3645,Montessori
+Vision Learning,Tamil Nadu,1995.0,27.9739,77.6231,Krishnamurti Schools
+Foundation International,Rajasthan,,12.3899,74.4888,Krishnamurti Schools
+Foundation Creative,Telangana,,32.5282,83.7338,Montessori
+Vision Progressive,Uttar Pradesh,1989.0,14.0199,86.4587,Experiential Learning
+Foundation Creative,Gujarat,1974.0,10.8934,85.5088,Waldorf
+Campus Primary,Uttar Pradesh,,31.9189,83.2292,Experiential Learning
+Foundation International,Odisha,2015.0,33.579,83.9724,Experiential Learning
+Academy Primary,Gujarat,2011.0,17.1316,95.8956,Montessori
+Pathway Creative,Haryana,1998.0,29.9392,83.5629,Montessori
+Pathway Learning,Tamil Nadu,1982.0,26.4767,90.2609,Waldorf
+Centre Creative,Madhya Pradesh,,30.0183,69.2214,Waldorf
+Centre Primary,Tamil Nadu,1985.0,22.6265,89.1135,Experiential Learning
+Centre International,Punjab,,30.1424,91.1613,Krishnamurti Schools
+Vision Learning,Rajasthan,1991.0,20.4078,71.7326,Experiential Learning
+Centre Primary,Gujarat,,10.5866,79.0164,Montessori
+Campus International,Maharashtra,1988.0,26.9037,77.6506,Krishnamurti Schools
+School Creative,Karnataka,,16.9053,72.0441,Waldorf
+Vision Learning,Rajasthan,1984.0,9.9616,87.9849,Montessori
+Academy Progressive,Uttar Pradesh,,33.9535,70.1255,Krishnamurti Schools
+School Primary,Maharashtra,2008.0,26.0425,91.198,Montessori
+Pathway Learning,Rajasthan,2008.0,10.6945,96.0095,Waldorf
+Institute International,Odisha,,15.7188,68.1942,Montessori
+Institute Innovative,Telangana,,11.7389,93.7088,Experiential Learning
+School International,Kerala,1989.0,28.1718,91.9444,Krishnamurti Schools
+School Primary,Haryana,,32.9262,89.355,Waldorf
+Campus International,West Bengal,,19.722,73.0582,Montessori
+Pathway Creative,Delhi,,29.4321,70.8729,Krishnamurti Schools
+School Creative,Uttar Pradesh,,18.6234,95.4154,Waldorf
+Pathway Progressive,Odisha,,26.2042,91.9986,Montessori
+School Innovative,Haryana,1976.0,22.4643,96.5196,Experiential Learning
+Centre Learning,West Bengal,2021.0,28.0961,75.9014,Montessori
+Campus Primary,Odisha,1975.0,26.6551,77.238,Montessori
+Academy Primary,Punjab,,25.8835,83.6344,Waldorf
+Academy Progressive,Haryana,,13.431,93.1782,Montessori
+School Innovative,Haryana,1975.0,20.1132,82.3109,Experiential Learning
+Institute Progressive,Rajasthan,,25.0977,86.1317,Experiential Learning
+Vision Creative,Karnataka,2009.0,21.7144,85.3709,Waldorf
+Vision Learning,Rajasthan,,15.2135,90.6719,Montessori
+Institute Progressive,Haryana,1994.0,20.5943,71.723,Montessori
+Academy Innovative,Tamil Nadu,1977.0,8.9733,71.9703,Experiential Learning
+Foundation Innovative,Kerala,,13.4613,87.2033,Montessori
+Vision Primary,Tamil Nadu,,25.7794,93.0628,Waldorf
+Foundation Learning,Gujarat,,14.5154,78.9443,Experiential Learning
+Academy Learning,Telangana,1987.0,17.3686,93.3134,Experiential Learning
+Campus Primary,Madhya Pradesh,2018.0,21.7969,95.7313,Waldorf
+Institute Learning,Tamil Nadu,1982.0,9.2583,77.875,Montessori
+Institute Learning,Tamil Nadu,,10.457,83.9448,Waldorf
+Pathway Progressive,Karnataka,,30.7232,84.0542,Montessori
+Campus Progressive,Rajasthan,,22.9529,84.2511,Krishnamurti Schools
+Institute Innovative,Madhya Pradesh,1991.0,10.6745,81.3294,Montessori
+Institute Innovative,Andhra Pradesh,2012.0,11.4779,95.446,Krishnamurti Schools
+Foundation Creative,West Bengal,,21.177,82.9911,Krishnamurti Schools
+Centre Learning,Rajasthan,,33.8322,90.7202,Waldorf
+Institute Learning,West Bengal,,13.0237,76.7647,Waldorf
+Centre International,Haryana,,26.3715,92.0322,Waldorf
+School Innovative,Punjab,2015.0,20.9611,78.1153,Waldorf
+Campus Innovative,Maharashtra,,31.5418,76.1478,Montessori
+Foundation Progressive,Tamil Nadu,,34.2241,80.4735,Waldorf
+Vision Innovative,Haryana,1992.0,33.2392,76.973,Krishnamurti Schools
+Campus Creative,Maharashtra,2020.0,27.7992,78.2912,Montessori
+Pathway Primary,Delhi,1994.0,24.9231,76.1249,Waldorf
+Institute Primary,Rajasthan,2021.0,14.7814,71.5374,Waldorf
+School Progressive,Maharashtra,,12.3868,70.1981,Montessori
+Pathway Creative,Odisha,1983.0,34.7113,85.7007,Krishnamurti Schools
+Campus Innovative,Odisha,2013.0,20.7606,77.6733,Experiential Learning
+School International,Andhra Pradesh,,15.2769,81.3956,Krishnamurti Schools
+Centre International,Andhra Pradesh,1995.0,30.0331,68.9151,Krishnamurti Schools
+Centre International,West Bengal,,28.557,83.9,Montessori
+School Learning,Kerala,,20.9194,75.5373,Experiential Learning
+Foundation Creative,Rajasthan,1991.0,26.5753,82.1948,Krishnamurti Schools
+Institute Progressive,Rajasthan,,10.379,87.3,Waldorf
+Foundation Primary,Maharashtra,,15.3942,92.225,Montessori
+Campus Progressive,Tamil Nadu,2005.0,26.5676,85.236,Waldorf
+Academy Learning,Telangana,2005.0,32.1574,78.5166,Experiential Learning
+Foundation Primary,Tamil Nadu,2012.0,31.6105,71.5105,Montessori
+Institute Progressive,Maharashtra,2000.0,33.6399,93.3109,Experiential Learning
+Vision Learning,Gujarat,,33.3491,85.6383,Montessori
+School International,Madhya Pradesh,1992.0,28.486,90.9566,Montessori
+Institute Progressive,Punjab,1977.0,24.3978,75.0441,Experiential Learning
+Pathway Learning,West Bengal,1992.0,10.1497,70.651,Waldorf
+School Progressive,Andhra Pradesh,,19.6334,93.0587,Waldorf
+Institute Innovative,Odisha,1975.0,10.4325,78.9964,Experiential Learning
+Campus Learning,Telangana,1995.0,20.4173,96.3589,Montessori
+School International,Andhra Pradesh,,16.9821,73.2175,Waldorf
+Academy International,Haryana,1984.0,15.217,68.9625,Experiential Learning
+Vision International,West Bengal,2021.0,19.2863,85.3321,Waldorf
+Vision Creative,Maharashtra,,32.8045,80.6438,Krishnamurti Schools
+Centre Innovative,Delhi,1973.0,29.1309,79.9269,Montessori
+Foundation Innovative,West Bengal,,24.5503,95.2028,Experiential Learning
+Foundation Learning,Telangana,,18.6882,75.2831,Experiential Learning
+Pathway Progressive,Telangana,2012.0,11.0433,88.7957,Montessori
+Institute Learning,Gujarat,1998.0,18.9122,68.4997,Montessori
+Foundation International,Maharashtra,2003.0,8.1707,92.3003,Montessori
+Foundation Progressive,Uttar Pradesh,,15.7109,89.2218,Experiential Learning
+Foundation Innovative,Haryana,,20.738,84.0525,Experiential Learning
+Pathway Progressive,Tamil Nadu,2008.0,28.7727,76.2894,Montessori
+Centre Innovative,Karnataka,1982.0,17.5256,92.4283,Experiential Learning
+Vision Creative,Karnataka,,18.3215,75.0218,Waldorf
+Vision Creative,West Bengal,1989.0,19.6314,91.3088,Experiential Learning
+Foundation International,Madhya Pradesh,,26.3925,93.7046,Waldorf
+Pathway International,Kerala,1992.0,10.3981,76.9906,Waldorf
+Foundation Progressive,Tamil Nadu,2015.0,32.212,80.2619,Montessori
+Institute Primary,Haryana,1974.0,33.1802,83.2091,Krishnamurti Schools
+Vision Primary,Kerala,2001.0,17.3313,82.0253,Krishnamurti Schools
+Campus Innovative,Punjab,1986.0,32.6564,77.5632,Waldorf
+School Progressive,Tamil Nadu,,9.153,76.6947,Waldorf
+Pathway Progressive,West Bengal,1971.0,9.1985,87.8487,Experiential Learning
+Foundation Learning,Kerala,,12.1875,72.5024,Krishnamurti Schools
+Institute Progressive,Delhi,,34.4221,69.7977,Waldorf
+Centre Creative,Andhra Pradesh,,18.4097,73.5823,Montessori
+Academy Creative,Madhya Pradesh,,23.1798,76.2451,Montessori
+Vision Learning,Tamil Nadu,1994.0,20.9565,74.5395,Experiential Learning
+Campus Learning,Madhya Pradesh,,32.9387,75.7156,Montessori
+Pathway Creative,Haryana,1977.0,20.3619,95.8869,Krishnamurti Schools
+Vision Creative,Delhi,,30.8373,95.2095,Montessori
+Institute Innovative,Punjab,,11.3567,79.47,Experiential Learning
+Academy Learning,Rajasthan,,14.2743,90.5734,Experiential Learning
+Centre Learning,Telangana,,32.2144,95.7227,Krishnamurti Schools
+Institute Innovative,Rajasthan,1971.0,34.0538,75.2745,Montessori
+Pathway Progressive,Gujarat,1980.0,23.4734,91.8581,Waldorf
+Foundation Creative,Telangana,2020.0,10.6303,77.9876,Experiential Learning
+Centre International,Punjab,,30.4062,84.2674,Waldorf
+Campus Progressive,Telangana,,10.4146,86.5615,Montessori
+Institute Primary,Odisha,,28.2818,73.1909,Waldorf
+Institute Progressive,Karnataka,,25.1273,72.1102,Krishnamurti Schools
+Vision Innovative,Punjab,2007.0,15.0576,91.3613,Waldorf
+Institute Innovative,Gujarat,1976.0,31.0008,94.5908,Krishnamurti Schools
+Institute Creative,West Bengal,,32.7148,75.5449,Krishnamurti Schools
