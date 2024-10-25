@@ -48,82 +48,105 @@ document.addEventListener('DOMContentLoaded', function () {
         ["Rajasthan", "Rajasthan"],
         ["Sikkim", "Sikkim"],
         ["Tamil Nadu", "Tamil Nadu"],
-        ["Telengana", "Telangana"],  
+        ["Telengana", "Telangana"],
         ["Tripura", "Tripura"],
         ["Uttar Pradesh", "Uttar Pradesh"],
         ["Uttarakhand", "Uttarakhand"],
         ["West Bengal", "West Bengal"],
     ]);
-    
+
     function renameState(state) {
         return stateNameMap.get(state) || state;
     }
 
+    // Tooltip setup
+    const tooltip = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("padding", "8px")
+        .style("background", "lightgray")
+        .style("border", "1px solid #333")
+        .style("border-radius", "5px")
+        .style("pointer-events", "none")
+        .style("opacity", 0);
+
     d3.json("https://raw.githubusercontent.com/geohacker/india/master/state/india_telengana.geojson")
         .then(function (geoData) {
-            d3.csv("data.csv").then(function (data) {
-                const schoolsByState = d3.rollups(
-                    data,
-                    v => v.length,
-                    d => renameState(d.state)
-                );
-
-                const stateSchoolMap = new Map(schoolsByState);
-
-                // Update the color scale: white for 0, green to darker green based on school count
-                const maxSchoolCount = d3.max(schoolsByState, d => d[1]) || 1;
-                const colorScale = d3.scaleSequential()
-                    .domain([1, maxSchoolCount])  // Start from 1, not 0 (white for 0 schools)
-                    .interpolator(d3.interpolateGreens);  // Green color scale
-
-                svg.selectAll("path")
-                    .data(geoData.features)
-                    .join("path")
-                    .attr("d", path)
-                    .attr("fill", d => {
-                        const state = renameState(d.properties.NAME_1);
-                        const schoolCount = stateSchoolMap.get(state) || 0;
-                        // White for 0 schools, use colorScale for others
-                        return schoolCount === 0 ? "#ffffff" : colorScale(schoolCount);
-                    })
-                    .attr("stroke", "#333333")
-                    .on("mouseover", function (event, d) {
-                        const state = renameState(d.properties.NAME_1);
-                        const schoolCount = stateSchoolMap.get(state) || 0;
-                        d3.select("#info").html(`<strong>${state}</strong><br>Number of Schools: ${schoolCount}`);
-                    })
-                    .on("mouseout", function () {
-                        d3.select("#info").html('');
-                    });
-
+            d3.csv("data_v2.csv").then(function (data) {
+                const typeFilter = d3.select("#type-filter");
                 const yearSlider = d3.select("#year-slider");
-                yearSlider.on("input", function () {
-                    const selectedYear = +this.value;
-                    d3.select("#year-display").text(selectedYear);
 
-                    const filteredData = data.filter(school => school.year <= selectedYear);
-                    updateMap(filteredData);
-                });
+                const colorSchemes = {
+                    "All": d3.interpolateGreens,
+                    "Montessori": d3.interpolateBlues,
+                    "Experiential Learning": d3.interpolateOranges,
+                    "Waldorf": d3.interpolatePurples,
+                    "Krishnamurti Schools": d3.interpolateReds,
+                };
 
-                function updateMap(filteredData) {
-                    const updatedSchoolsByState = d3.rollups(
+                function filterData() {
+                    const selectedType = typeFilter.property("value");
+                    const selectedYear = +yearSlider.property("value");
+
+                    const filteredData = data.filter(d =>
+                        (selectedType === "All" || d.type === selectedType) &&
+                        d.year <= selectedYear
+                    );
+
+                    updateMap(filteredData, selectedType);
+                }
+
+                function updateMap(filteredData, selectedType) {
+                    const schoolsByState = d3.rollups(
                         filteredData,
                         v => v.length,
                         d => renameState(d.state)
                     );
 
-                    const updatedStateSchoolMap = new Map(updatedSchoolsByState);
+                    const stateSchoolMap = new Map(schoolsByState);
+
+                    // Get the maximum school count for the selected type to scale colors properly
+                    const maxSchoolCount = d3.max(schoolsByState, d => d[1]) || 1;
+                    const colorScale = d3.scaleSequential()
+                        .domain([0, maxSchoolCount])
+                        .interpolator(colorSchemes[selectedType]);
 
                     svg.selectAll("path")
-                        .transition()  // Add transition for smooth updates
-                        .duration(250)  // 750ms for a smoother effect
+                        .data(geoData.features)
+                        .join("path")
+                        .attr("d", path)
                         .attr("fill", d => {
                             const state = renameState(d.properties.NAME_1);
-                            const schoolCount = updatedStateSchoolMap.get(state) || 0;
-                            // White for 0 schools, colorScale for others
-                            return schoolCount === 0 ? "#ffffff" : colorScale(schoolCount);
+                            const schoolCount = stateSchoolMap.get(state) || 0;
+                            return colorScale(schoolCount);
+                        })
+                        .attr("stroke", "#333333")
+                        .on("mouseover", function (event, d) {
+                            const state = renameState(d.properties.NAME_1);
+                            const schoolCount = stateSchoolMap.get(state) || 0;
+                            tooltip
+                                .style("opacity", 1)
+                                .html(`<strong>${state}</strong><br>Number of Schools: ${schoolCount}`)
+                                .style("left", (event.pageX + 10) + "px")
+                                .style("top", (event.pageY - 28) + "px");
+                        })
+                        .on("mousemove", function (event) {
+                            tooltip
+                                .style("left", (event.pageX + 10) + "px")
+                                .style("top", (event.pageY - 28) + "px");
+                        })
+                        .on("mouseout", function () {
+                            tooltip.style("opacity", 0);
                         });
                 }
+
+                typeFilter.on("change", filterData);
+                yearSlider.on("input", function () {
+                    d3.select("#year-display").text(this.value);
+                    filterData();
+                });
+
+                filterData();  // Initial call to load data
             });
         })
         .catch(error => console.error("Error loading data:", error));
