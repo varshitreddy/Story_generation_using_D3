@@ -4,15 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const svg = d3.select("#map")
         .append("svg")
-        .attr("width", width)
+        .attr("width", width / 2) // Set to half width for left side
         .attr("height", height)
-        .attr("viewBox", `0 0 ${width} ${height}`)
+        .attr("viewBox", `0 0 ${width / 2} ${height}`)
         .attr("style", "max-width: 100%; height: auto;");
 
     const projection = d3.geoMercator()
         .center([78.9629, 20.5937])
         .scale(1000)
-        .translate([width / 2, height / 2]);
+        .translate([width / 4, height / 2]); // Center projection to fit the left half
 
     const path = d3.geoPath().projection(projection);
 
@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             return colorScale(schoolCount);
                         })
                         .attr("stroke", "#333333")
+                        .style("transition", "fill 0.4s ease")
                         .on("mouseover", function (event, d) {
                             const state = renameState(d.properties.NAME_1);
                             const schoolCount = stateSchoolMap.get(state) || 0;
@@ -137,6 +138,22 @@ document.addEventListener('DOMContentLoaded', function () {
                         })
                         .on("mouseout", function () {
                             tooltip.style("opacity", 0);
+                        })
+                        .on("click", function (event, d) {
+                            const state = renameState(d.properties.NAME_1);
+                            const schoolsInState = filteredData.filter(school => renameState(school.state) === state);
+
+                            // Update the list of learning centers on the right
+                            const schoolList = d3.select("#school-list");
+                            schoolList.selectAll("*").remove(); // Clear previous content
+
+                            if (schoolsInState.length > 0) {
+                                schoolsInState.forEach(school => {
+                                    schoolList.append("li").text(school.name); // Append school names
+                                });
+                            } else {
+                                schoolList.append("li").text("No learning centers found.");
+                            }
                         });
                 }
 

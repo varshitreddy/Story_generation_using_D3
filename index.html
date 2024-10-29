@@ -6,31 +6,6 @@
     <title>Alternative Schools in India</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        /* Tooltip styles */
-        .tooltip {
-            position: absolute;
-            padding: 5px;
-            background: lightgray;
-            border: 1px solid #333;
-            border-radius: 5px;
-            pointer-events: none; /* Prevents tooltip from capturing mouse events */
-            opacity: 0; /* Start hidden */
-        }
-
-        /* Styles for the map */
-        #map {
-            width: 100%;
-            height: 600px; /* Adjust as needed */
-            margin: 20px 0;
-        }
-
-        /* Info container styles */
-        #info {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -38,8 +13,7 @@
     </header>
 
     <div id="content">
-        <!-- Dropdown filter for school type -->
-        <div>
+        <div class="filter-slider-container">
             <label for="type-filter">Filter by School Type:</label>
             <select id="type-filter">
                 <option value="All">All</option>
@@ -48,21 +22,22 @@
                 <option value="Krishnamurti Schools">Krishnamurti Schools</option>
                 <option value="Experiential Learning">Experiential Learning</option>
             </select>
+
+            <label for="year-slider">Select Year of Founding:</label>
+            <input type="range" id="year-slider" min="1950" max="2024" step="1" value="2024">
+            <span id="year-display">2024</span>
         </div>
 
-        <!-- Map and info container -->
-        <div id="map"></div>
-        <div id="info"></div>
+        <!-- Flex container for map and info -->
+        <div class="flex-container">
+            <div id="map"></div>
+            <div id="info">
+                <h2>Learning Centers</h2>
+                <ul id="school-list"></ul> <!-- List for learning center names -->
+            </div>
+        </div>
     </div>
 
-    <!-- Slider container for year selection -->
-    <div class="slider-container">
-        <label for="year-slider">Select Year of Founding:</label>
-        <input type="range" id="year-slider" min="1950" max="2024" step="1" value="2024">
-        <span id="year-display">2024</span>
-    </div>
-
-    <!-- New section for alternative education info -->
     <section id="education-info">
         <h2>The Growth of Alternative Education in India</h2>
         <p>
